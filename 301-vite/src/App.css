@@ -1,8 +1,16 @@
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+
+  height: 100vh; 
+  display: flex; /* Keep it centered */
+  justify-content: center; 
+
+  align-items: center; 
+  box-sizing: border-box; 
   text-align: center;
+
 }
 
 .logo {
@@ -16,6 +24,7 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+  
 }
 
 @keyframes logo-spin {
@@ -39,4 +48,60 @@
 
 .read-the-docs {
   color: #888;
+} 
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.generate-quote-button, .go-to-spelling-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+.generate-quote-button:hover, .go-to-spelling-button:hover {
+  background-color: #ddd;
+}
+
+/* Quote display styles */
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Styling for the spelling page container */
+.spelling-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+  text-align: center;
+}
+
+.spelling-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.letter {
+  font-size: 24px;
+  margin: 0 5px;
 }
